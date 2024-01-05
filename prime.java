@@ -15,7 +15,7 @@ public class prime {
             }
         }
 
-        if(isPrime){
+        if(isPrime){ // Checking for prime
             if(n==1){
                 System.out.println("This is neither prime nor composite");
             }
