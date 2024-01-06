@@ -5,6 +5,12 @@ public class Arrays{
 
         // Declaring array of integer type
         int[] marks = new int[3];
+        /*other procedure
+            for declaring array
+            suppose for size 3
+
+            int[] marks = {97 , 90 , 95};
+        */
         marks[0] = 97;
         marks[1] = 90;
         marks[2] = 95;
