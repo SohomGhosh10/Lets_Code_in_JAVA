@@ -12,8 +12,8 @@ public class Arrays{
         System.out.println("Marks are");
         
         // Displaying marks
-        System.out.println(marks[0]);
-        System.out.println(marks[1]);
-        System.out.println(marks[2]);
+       for(int i = 0; i < 3; i++){
+            System.out.println(marks[i]);
+        }
     }
 }
