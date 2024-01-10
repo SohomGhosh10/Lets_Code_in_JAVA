@@ -14,7 +14,7 @@ public class Problem_array {
          int x = sc.nextInt();
 
         for(int i = 0; i < numbers.length; i++){
-            if(numbers[i] == x){
+            if(numbers[i] == x){  // checks for the desired index of the data
                 System.out.println("x is found at index:" + i);
             }
         }
