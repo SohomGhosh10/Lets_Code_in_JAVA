@@ -20,5 +20,8 @@ public class Data_Types {
         int d = 7;
         c = ++d * 8; // 8 * 8
         System.out.println(c); // 64
+
+        char ch = 'a';
+        System.out.println(++ch); // character incrementation
     }
 }
