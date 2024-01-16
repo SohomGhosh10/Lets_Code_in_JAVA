@@ -1,0 +1,13 @@
+import java.util.*;
+
+public class String_Basics {
+    public static void main(String[] args) {
+       // String name = "Sohom";
+       // System.out.println(name);
+
+        Scanner sc = new Scanner(System.in);
+       // String st = sc.next(); for printing 1st word of input
+        String st = sc.nextLine(); // for printing full line of input
+        System.out.println(st);
+    }
+}
