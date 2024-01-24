@@ -3,7 +3,7 @@ public class Logical_Operators {
     public static void main(String[] args) {
         System.out.println("For logical AND...");
 
-        // for logical AND, associativity is from left to right
+        // for logical AND, associativity is from left to right.
         boolean a = true;
         boolean b = false;
         if(a && b){
