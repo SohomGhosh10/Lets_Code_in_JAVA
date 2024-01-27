@@ -10,7 +10,7 @@ public class sohom{
         float area= pi*r*r;
 
         System.out.println(perimeter);
-        System.out.println(area);
+        System.out.println(area); // float value
 
     }
 }
