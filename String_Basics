@@ -6,7 +6,7 @@ public class String_Basics {
        // System.out.println(name);
 
         Scanner sc = new Scanner(System.in);
-       // String st = sc.next(); for printing 1st word of input
+       // String st = sc.next(); for printing 1st word of input.
         String st = sc.nextLine(); // for printing full line of input
         System.out.println(st);
     }
