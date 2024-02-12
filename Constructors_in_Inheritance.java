@@ -6,6 +6,7 @@ class Base{
 
 class Derived extends Base{
     Derived(){
+        super(); // calls the base class constructor to be executed first
         System.out.println("Derived class constructor is called");
     }
 }
