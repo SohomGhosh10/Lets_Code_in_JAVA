@@ -1,69 +1,47 @@
-class Triangle {
-    private double width;
-    private double height;
-    private String style;
+class Triangle1{
+    static double height;
+    static double width;
 
-    public double getWidth() {
-        return width;
+    Triangle1(){
+        System.out.println("I am a default constructor");
     }
 
-    public void setWidth(double width) {
-        this.width = width;
-    }
-
-    public void setStyle(String s) {
-        this.style = s;
-    }
-
-    public String getStyle() {
-        return style;
-    }
-
-    public double getHeight() {
+    public double getHeight(){
         return height;
     }
 
-    public void setHeight(double height) {
+    public double getwidth(){
+        return width;
+    }
+
+
+    Triangle1(double height , double width){
         this.height = height;
+        this.width = width;
     }
 
-    // Constructor for Triangle class
-    public Triangle(String s, double w, double h) {
-        setWidth(w);
-        setHeight(h);
-        setStyle(s);
+    static double getArea(){
+        return (width * height) / 2;
     }
 
-    // Getter for area in Triangle class
-    public double area() {
-        return getWidth() * getHeight() / 2;
-    }
-
-    // Method to show the style in Triangle class
-    public void showStyle() {
-        System.out.println("Triangle is " + style);
-    }
-
-    // Nested class shapes
-    static class shapes extends Triangle {
-        shapes(String s, double w, double h) {
-            super(s, w, h);
-        }
-
-        // Overriding area method in shapes class
-        double area1() {
-            return getWidth() * getHeight() / 2;
-        }
-    }
 }
 
-public class Inheritance_prb {
-    public static void main(String[] args) {
-        Triangle.shapes t1 = new Triangle.shapes("filled", 4.0, 4.0);
-        Triangle.shapes t2 = new Triangle.shapes("outlined", 6.0, 8.0);
+class shapes extends Triangle1{
+    String style;
+    static double height;
+    static double width;
+    shapes(double h , double w , String style){
+        super(h , w);
+        this.style = style;
+    }
 
-        // Displaying areas for both objects
-        System.out.println("Area of t1: " + t1.area());
-        System.out.println("Area of t2: " + t2.area());
+}
+
+public class Inheritance_prob {
+    public static void main(String[] args) {
+        shapes sr = new shapes(3 , 4 , "Alien");
+        double area = shapes.getArea();
+
+        System.out.println("Area is " + area);
     }
 }
