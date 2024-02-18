@@ -2,10 +2,10 @@ class C{
     private String name;
     private int id;
 
-    public String getName(){
+    public String getName(){ // getter for returning value
         return name;
     }
-    public void setName(String n){
+    public void setName(String n){ // setter for setting the value
         name = n;
     }
     public int getId(){
