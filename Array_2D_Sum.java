@@ -2,6 +2,7 @@ import java.util.*;
 
 public class Array_2D_Sum {
     public static void main(String[] args) {
+        // initializing 2 matrices
 
         int mat1[][] = {{10 , 3 , 7} , {2 , 8 , 15}};
         int mat2[][] = {{18 , 31 , 17} , {20 , 0 , 5}};
@@ -17,7 +18,7 @@ public class Array_2D_Sum {
         for(int i = 0; i < mat1.length; i++){
             for(int j = 0; j < mat1[i].length; j++) {
                 System.out.print(result[i][j] + " ");
-                result[i][j] = mat1[i][j] + mat2[i][j];
+                result[i][j] = mat1[i][j] + mat2[i][j]; // summing 2 matrices
             }
             System.out.println("");
         }
