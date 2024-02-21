@@ -6,7 +6,7 @@ public class Diagonal_Element {
         int sum = 0;
         for(int i = 0; i < n; i++){
             for(int j = 0; j < n; j++){
-                if(i == j){
+                if(i == j){ // primary diagonal
                     sum = sum + arr[i][j];
                     System.out.print(arr[i][j] + ", ");
                 }
@@ -21,7 +21,7 @@ public class Diagonal_Element {
         int sum1 = 0;
         for(int i = 0; i < n; i++){
             for(int j = 0; j < n; j++){
-                if((i + j) == (n - 1)){
+                if((i + j) == (n - 1)){ // secondary diagonal
                     sum1 = sum1 + arr[i][j];
                     System.out.print(arr[i][j] + ", ");
 
