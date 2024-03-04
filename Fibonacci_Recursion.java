@@ -8,7 +8,7 @@ public class Fibonacci_Recursion {
                 return 1;
             }
             else{
-                return CalFibo(num - 1) + CalFibo(num - 2); // recursive approach
+                return CalFibo(num - 1) + CalFibo(num - 2); // recursive approach.
             }
 
         }
