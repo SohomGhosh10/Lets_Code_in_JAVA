@@ -3,6 +3,14 @@ public class StringCompareto {
         String a = new String("Hello Java Coders");
         String b = new String("Hello Java Coders");
         String c = new String("Hello Java Boders");
+        String d = new String("");
+
+        System.out.println("a==d : " + a.compareTo(d));
+        System.out.println("a==b : " + a.compareTo(b));
+
+        /*
+            We are getting ASCII differences b/w two mismatched characters
+         */
 
         /*
             if a == b:
