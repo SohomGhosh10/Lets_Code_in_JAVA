@@ -30,6 +30,6 @@ public class TreeSetExample {
         System.out.println("Remove last element: " + ti.pollLast());
         System.out.println(ti);
         ti.clear();
-        System.out.println("Already cleared: " + ti);
+        System.out.println("Already cleared " + ti);
     }
 }
