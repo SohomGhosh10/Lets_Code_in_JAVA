@@ -1,4 +1,5 @@
-public class LinkedList1 {
+public class LinkedList1{
+
     class Node{
         String data;
         Node next;
@@ -33,30 +34,56 @@ public class LinkedList1 {
         while(currNode.next != null){
             currNode = currNode.next;
         }
-
         currNode.next = newNode;
     }
 
-    public void printDetails(){
+    public void deleteFirst(){
         if(head == null){
             System.out.println("List is empty");
             return;
         }
-        Node currNode = head;
-        while(currNode != null){
-            System.out.print(currNode.data + " -> ");    
-            currNode = currNode.next;
-        }
 
-        System.out.println("NULL");
+        head = head.next;
     }
 
+    public void deleteLast(){
+        if(head == null){
+            System.out.println("List is empty");
+            return;
+        }
+
+        Node second_last = head;
+        Node last = head.next;
+
+        while(last.next != null){
+            last = last.next;
+            second_last = second_last.next;
+        }
+
+        second_last.next = null;
+    }
+
+    public void printDetails(){
+        Node currNode = head;
+        if(head == null){
+            System.out.println("List is empty");
+            return;
+        }
+        while(currNode != null){
+            System.out.println(currNode.data);
+            currNode = currNode.next;
+        }
+    }
     public static void main(String[] args){
-        LinkedList1 ll = new LinkedList1(); 
-        ll.addFirst(" is");
-        ll.addFirst(" name");
-        ll.addFirst(" My");
-        ll.addLast(" Sohom");
-        ll.printDetails();
+            LinkedList1 ll = new LinkedList1();
+            ll.addFirst("1");
+            ll.addFirst("2");
+            ll.addFirst("3");
+            ll.addFirst("4");
+            ll.addLast("5");
+            ll.printDetails();
+            ll.deleteFirst();
+            ll.deleteLast();
+            ll.printDetails();
     }
 }
