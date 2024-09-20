@@ -15,7 +15,6 @@ public class Remove_Duplicates {
     }
 
     public static int remove(int[] arr){
-        Arrays.sort(arr);
         int i = 0;
         for(int j = 1; j < arr.length; j++){
             if(arr[j] != arr[i]){
